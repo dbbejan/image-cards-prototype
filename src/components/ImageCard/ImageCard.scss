@@ -1,0 +1,46 @@
+@keyframes shine-elem {
+  0% {
+    background-position: -50px;
+  }
+  100% {
+    background-position: 250px;
+  }
+}
+
+.image-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  .image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .author {
+    width: 250px;
+    margin: 10px;
+  }
+}
+
+.skeleton {
+  .image {
+    background-color: #ccc;
+    background-image: linear-gradient(90deg, #f4f4f4 0px, rgba(229, 229, 229, 0.8) 40px, #f4f4f4 80px);
+    background-size: 500px;
+    animation: shine-elem 2s infinite ease-out;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f4f4f4', endColorstr='#000000');
+  }
+
+  .author {
+    height: 20px;
+    background-image: linear-gradient(90deg, #f4f4f4 0px, rgba(229, 229, 229, 0.8) 40px, #f4f4f4 80px);
+    background-size: 500px;
+    animation: shine-elem 2s infinite ease-out;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f4f4f4', endColorstr='#000000');
+  }
+}
